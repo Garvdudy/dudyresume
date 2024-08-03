@@ -1,0 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a988a6;
+    padding: 15px 20px; 
+    position: relative;
+}
+
+.nav-left .brand-name {
+    color: #000000;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-right {
+    display: flex;
+    transition: all 1s ease;
+}
+
+.nav-right a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-right a:hover {
+    color: #ffffff;
+}
+
+.nav-toggle {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    right: 45px;
+    top: 22px;
+}
+
+
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-section h1 {
+    margin-bottom: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.form-container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 7px 7px 15px 8px rgba(0, 0, 0, 0.259);
+    width: calc(100% - 500px);
+    max-width: 800px;
+    /* border-radius: 10px;  */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%; /* Full width for all form-group elements */
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* width: 100%; */
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.response-message {
+    margin-top: 10px;
+    color: green;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .form-container {
+        width: calc(100% - 40px);
+    }
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    /* width: 100%; */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-options p {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-details a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.footer-details a:hover {
+    text-decoration: underline;
+}
+
+.footer-details .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-details .social-icons a {
+    color: #333;
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .left-side img {
+        max-width: 200px; /* Reduced image size for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .right-side h1 {
+        font-size: 28px;
+    }
+
+    .right-side h3 {
+        font-size: 18px;
+    }
+
+    .right-side p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-right {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-right a {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .right-side h1 {
+        font-size: 24px;
+    }
+
+    .right-side h3 {
+        font-size: 16px;
+    }
+
+    .right-side p {
+        font-size: 12px;
+    }
+}

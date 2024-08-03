@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="achievements.css">
+    <script defer src="scripts.js"></script>
+    <script defer src="achievements.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <h2 class="brand-name">D U D Y</h2>
+        </div>
+        <div class="nav-right" id="nav-links">
+            <a href="index.html">About Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+        <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+    </nav>
+    <main>
+        <section id="portfolio">
+            <h1>My Portfolio</h1>
+            <div class="portfolio-item">
+                <h2>Cloths Brand Website</h2>
+                <p>Project description : This was my first project in (2022)</p>
+                <a href="https://garvdudy.github.io/Cloths-Site-Demo/" target="_blank">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+        <section id="certificates">
+            <h1>My Certificates</h1>
+            <div class="certificate-item">
+                <h2>Data Analyest</h2>
+                <p>Issued by: Skill Course</p>
+                <a href="Certificate of complition.png" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate-item">
+                <h2>Website Development</h2>
+                <p>Issued by: Jhons Hopinks University</p>
+                <a href="Garv'sCertificateofFrontEndWebDevelopment.pdf" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate-item">
+                <h2>Digital Marketing</h2>
+                <p>Issued by: Aptech Institution</p>
+                <h4>Password : GARV221004</h4>
+                <a href="Garv-DM-Certificate.pdf" target="_blank">View Certificate</a>
+            </div>
+            <div class="certificate-item">
+                <h2>Application Development</h2>
+                <p>Issued by: META Institution</p>
+                <a href="Garv'sCertificateofAndroidApplicationDevelopmentbyMETA.pdf" target="_blank">View Certificate</a>
+            </div>   
+            <!-- Add more certificates as needed -->
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-options">
+                <p>Contact Number</p>
+                <p>Gmail</p>
+                <p>Check on social media</p>
+            </div>
+            <div class="footer-details">
+                <a href="tel:+9625155914">9625155914</a>
+                <a href="mailto:gjaatdudy@gmail.com">gjaatdudy@gmail.com</a>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/garvdudy" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://x.com/Garvdudy" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const certLinks = document.querySelectorAll('.certificate-item a');
+            
+            certLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const certUrl = this.href;
+                    // Your modal opening logic here
+                    console.log(`Open modal for ${certUrl}`);
+                });
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
